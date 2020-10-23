@@ -20,7 +20,7 @@ const hideLoadingSpinner = () => {
 }
 
 const updateQuoteDOM = (quoteText = '', quoteAuthor = '') => {
-    if (quoteText === '') {
+    if (quoteAuthor === '') {
         authorElement.innerText = 'Неизвестный'
     } else {
         authorElement.innerText = quoteAuthor;
