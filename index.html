@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="loader__part"></div>
+        <div class="loader__part"></div>
+        <div class="loader__part"></div>
+        <div class="loader__part"></div>
+    </div>
+    <section class="quote-container" id="quote-container">
+        <!-- Quote -->
+        <blockquote class="quote-text">
+            <p class="quote-text__body" id="q">
+            </p>
+        </blockquote>
+        <!-- Author -->
+        <footer class="quote-footer">
+            <div class="quote-footer__source">
+                <span class="quote-footer__author" id="author">
+                </span>
+            </div>
+            <div class="buttons-container">
+                <button class="twitter-button" id="twitter" title="Tweet This!">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button id="new-quote">New Quote</button>
+            </div>
+        </footer>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
